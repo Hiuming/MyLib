@@ -78,9 +78,10 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Hiuming/MyLib.git", :tag => "v0.0.2" }
+  #spec.source       = { :git => "https://github.com/Hiuming/MyLib.git", :tag => "v0.0.2" }
   spec.swift_version = "5.0"
-  spec.vendored_frameworks = "Frameworks/TestFramework.framework/"
+  spec.ios.vendored_frameworks = "Frameworks/TestFramework.framework/"
+  spec.source = { :http => 'https://drive.google.com/uc?export=download&id=1uZAJmHubVVUGHjjwlc8c4KDiC_pXHCiN' }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
