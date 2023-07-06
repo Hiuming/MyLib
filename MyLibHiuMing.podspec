@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/Hiuming/MyLib.git", :tag => "v0.0.2" }
   spec.swift_version = "5.0"
-  spec.ios.vendored_frameworks = "Frameworks/TestFramework.xcframework"
+  spec.vendored_frameworks = "Frameworks/TestFramework.framework/"
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
