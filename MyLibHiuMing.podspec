@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyLibHiuMing"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A short description of MyLib."
 
   # This description is used to generate tags and improve search results.
@@ -78,9 +78,10 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Hiuming/MyLib.git", :tag => "v0.0.1" }
+  spec.source       = { :git => "https://github.com/Hiuming/MyLib.git", :tag => "v0.0.2" }
   spec.swift_version = "5.0"
-
+  #spec.public_header_files = "TestFramework.xcframework/ios-arm64/TestFramework.framework/Headers/*.h"
+  spec.ios.vendored_frameworks = "TestFramework.xcframework/ios-arm64/*.{framework}"
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -90,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "MyLibrary/**/*.{swift}"
+  #spec.source_files  = "MyLibrary/**/*.{xcframework}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
